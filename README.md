@@ -13,4 +13,8 @@ Repository for keeping all the information aboute course project - web-applicati
 -	As an admin, I want to be able to add films
 -	As an admin, I want to be able to change film information
 
+# Database
+
+[Database](database.png)
+
 # REST API endpoints
