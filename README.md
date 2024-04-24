@@ -15,6 +15,6 @@ Repository for keeping all the information aboute course project - web-applicati
 
 # Database
 
-[Database](database.png)
+[Database](database.PNG)
 
 # REST API endpoints
