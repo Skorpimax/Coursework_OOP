@@ -22,82 +22,149 @@ Repository for keeping all the information aboute course project - web-applicati
 
 # REST API endpoints
 
-Get specific film information
+
+### Get specific film information
+
 Endpoint: GET /films/{filmId}
+
 Path Parameter: filmId
 
-Search films by name
+
+### Search films by name
+
 Endpoint: GET /films/search
+
 Query Parameter: name 
 
-Search films by rate
+
+### Search films by rate
+
 Endpoint: GET /films/search
+
 Query Parameter: rate
 
-Search films by release date
+
+### Search films by release date
+
 Endpoint: GET /films/search
+
 Query Parameter: release_year
 
-Rate a film
+
+### Rate a film
+
 Endpoint: POST /films/{filmId}/rate
+
 Path Parameter: filmId (ID of the film)
+
 Request Body:
+
 {
+
   "rating": number
+  
 }
 
-Create a list
+
+### Create a list
+
 Endpoint: POST /lists
+
 Request Body:
+
 {
+
   "name": string
+  
 }
 
-Delete a list
+
+### Delete a list
+
 Endpoint: DELETE /lists/{listId}
+
 Path Parameter: listId 
 
-Get list contents
+
+### Get list contents
+
 Endpoint: GET /lists/{listId}
+
 Path Parameter: listId 
 
-Find lists by name
+
+### Find lists by name
+
 Endpoint: GET /lists/search
+
 Query Parameter: list_name
 
-Add a film to a list
+
+### Add a film to a list
+
 Endpoint: POST /lists/{listId}/films
+
 Path Parameter: listId
+
 Request Body:
+
 {
+
   "filmId": number
+  
 }
 
-Remove a film from a list
+
+### Remove a film from a list
+
 Endpoint: DELETE / lists/{listId}/films
+
 Path Parameter: listId 
+
 Request Body:
+
 {
+
   "filmId": number
+  
 }
 
-Add a film
+
+### Add a film
+
 Endpoint: POST /admin/films
+
 Request Body:
+
 {
+
  "name": string,
+ 
  "release_year": number (date),
+ 
  "lenght": number (timestamp),
+ 
  "description": string
+ 
 }
 
-Update film information
+
+### Update film information
+
 Endpoint: PUT /admin/films/{filmId}
+
 Path Parameter: filmId
+
 Request Body:
+
 {
+
   "name": string,
+  
   "release_year": number (date),
+  
   "lenght": number (timestamp),
+  
   "description": string
+  
 }
